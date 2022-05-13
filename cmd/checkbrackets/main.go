@@ -3,7 +3,7 @@ package main
 import "github.com/vitor-mariano/data-structures-and-algorithms/pkg/stack"
 
 func checkBrackets(brackets string) bool {
-	s := stack.New([]rune(brackets)...)
+	s := stack.New[rune]()
 	pairs := []struct {
 		open  rune
 		close rune
